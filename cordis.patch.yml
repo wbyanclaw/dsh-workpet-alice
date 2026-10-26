@@ -1,0 +1,4 @@
+# dsh-workpet-alice bundle layer: registers the alice appearance into ctx.workpet.
+- insert:
+    - id: dsh-workpet-alice
+      name: dsh-workpet-alice

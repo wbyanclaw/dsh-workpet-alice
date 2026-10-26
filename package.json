@@ -1,0 +1,63 @@
+{
+  "name": "dsh-workpet-alice",
+  "version": "0.1.0",
+  "description": "An alice appearance for the dsh-workpet capability in DeepSeek Harness.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbyanclaw/dsh-workpet-alice.git"
+  },
+  "homepage": "https://github.com/wbyanclaw/dsh-workpet-alice#readme",
+  "bugs": {
+    "url": "https://github.com/wbyanclaw/dsh-workpet-alice/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "icon": "./icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check client.js && node --check index.js"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "workpet",
+    "workpet-skin",
+    "alice"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "dsh-workpet"
+      ]
+    }
+  }
+}
