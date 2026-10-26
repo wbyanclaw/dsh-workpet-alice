@@ -96,7 +96,7 @@ ctx.workpet.register({
 
 ### 换素材
 
-当前帧取自 `alice_half` 图集（`1024×1024`，4 × 4 网格，每格 256 px）：每个状态取第 1 格，按 alpha 裁边，缩到 160 px 高，编码为 WebP q88。
+当前帧取自 `alice_half` 图集（`1024×1024`，4 × 4 网格，每格 256 px）：每个状态取第 1 格，按 alpha 裁边，缩到 160 px 高，编码为 WebP q88。8 张原始图集在 [`assets/sprites/`](assets/sprites/)，规格与来源见 [`assets/README.md`](assets/README.md)。
 
 换成自己的图：
 
@@ -161,5 +161,5 @@ npm publish
 ## 致谢与许可
 
 - 插件结构来自 [dsh-workpet-parrot](https://github.com/lastorder/dsh-workpet-parrot)（lastorder，MIT）。
-- 素材：为本项目从 `alice_half` Mori 雪碧包转制，见 [LICENSE](LICENSE)。
-- 代码：MIT。
+- 素材：`assets/sprites/` 下的 8 张原始雪碧（1024×1024，4×4，半身），生成流程与来源见 [assets/README.md](assets/README.md)。
+- 代码与素材均为 MIT，© 2026 Yu Dong，见 [LICENSE](LICENSE)。

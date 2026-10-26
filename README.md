@@ -96,7 +96,7 @@ Files:
 
 ### Swap the artwork
 
-The frames were cut from `alice_half` sheets (`1024×1024`, 4 × 4 grid, 256 px cells): frame 0 of each state, alpha-cropped, scaled to 160 px tall, encoded as WebP q88.
+The frames were cut from `alice_half` sheets (`1024×1024`, 4 × 4 grid, 256 px cells): frame 0 of each state, alpha-cropped, scaled to 160 px tall, encoded as WebP q88. The 8 source sheets live in [`assets/sprites/`](assets/sprites/); specs and provenance are in [`assets/README.md`](assets/README.md).
 
 To use your own sheets:
 
@@ -161,5 +161,5 @@ The repo follows the `dsh-workpet-parrot` conventions (bundle patch + `dsh.clien
 ## Credits & license
 
 - Plugin structure: [dsh-workpet-parrot](https://github.com/lastorder/dsh-workpet-parrot) by lastorder, MIT.
-- Artwork: generated for this project from the `alice_half` Mori sprite pack; see [LICENSE](LICENSE).
-- Code: MIT.
+- Artwork: the 8 source sheets in `assets/sprites/` (1024×1024, 4×4, half-body); pipeline and provenance in [assets/README.md](assets/README.md).
+- Code and artwork: MIT, © 2026 Yu Dong — see [LICENSE](LICENSE).

@@ -2,6 +2,7 @@
 # this is a backstop for repository-only material.
 .github/
 test/
+assets/
 AGENTS.md
 *.tgz
 .DS_Store
